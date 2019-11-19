@@ -1,0 +1,107 @@
+
+  
+  *{
+    margin: 0;
+    padding: 0;
+    
+}
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+  #mainNav .link-pocetna {
+    color: #fed136;
+    font-family: 'Kaushan Script' ;
+    font-size: 1.75em;
+    position:center;}
+  
+  
+  .navBar{
+      
+      position: fixed;
+        top:0;  
+        height: 80px;
+        right: 0;
+        left: 0;
+    }
+
+    #mainNav .container ul{
+        display: grid;
+        grid-template-columns: 1450px 150px 150px 150px;
+        list-style-type: none;
+        background-color: aquamarine;
+        padding-right:0;
+        font-size:x-large;
+    }
+
+    #mainNav .container ul li {
+       display:grid;
+        justify-content: center;
+        align-content: center;
+        
+        
+    } 
+
+    #mainNav .container ul li :hover{
+        color: #FF1493;
+    } 
+
+    #mainNav .container ul li:first-child {
+        justify-self:left;
+        font-size: xx-large;
+        align-content: center;
+        padding-left: 30px;
+      
+    } 
+/*Footer radimo sada!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.footer{
+  height:70px;
+  background-color: green;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer ul {
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+}
+.footer ul li{
+  display:grid;
+  justify-content: center;
+  list-style-type: none;
+  padding-top: 20px;
+ 
+}
+
+
+/* POCETNA */ 
+
+#pocetna .container{
+  height: 1000px;
+background-image: url(slika1.jpg);
+text-align: center;
+padding-top: 350px;
+
+}
+
+
+
+#pocetna .container .text .naslov{
+font-size:200px;
+
+}
+#pocetna .container .text .moto{
+  font-size: 50px;
+}
+
+
+
+  
