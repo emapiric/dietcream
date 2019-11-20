@@ -1,128 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Diet Cream</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-        <header>
-                <!-- meni -->
-                <nav id = "mainNav" class="navBar">
-                    <div class = "container"> 
-                     <!--<a class = "link-pocetna" href = #pocetna >Diet Cream</a>-->
-                      <div class = "meni">
-                        <ul class = "meni-lista">
-                          <li>
-                            <a class = "link-pocetna" href = "index.html" >Diet Cream</a>
-                          </li>
-                          <li class = "meni-item" >
-                            <a class = "meni-link" href = "ponuda.html" >Ponuda</a>
-                          </li>
-                          <li  class = "meni-item">
-                            <a class = "meni-link" href = "desavanja.html"> Dešavanja</a>
-                          </li>
-                          <li  class = "meni-item">
-                            <a class = "meni-link" href="kontakt.html"> Kontakt</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                </header>
-
-  <!--Ponuda-->
-  <section class= "ponuda" >
-
-    <header class="naslov" >
-        <h2 >Ponuda</h2>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- meni -->
+      <nav id="mainNav" class="navBar">
+        <div class="container">
+          <!--<a class = "link-pocetna" href = #pocetna >Diet Cream</a>-->
+          <div class="meni">
+            <ul class="meni-lista">
+              <li>
+                <a class="link-pocetna" href="index.html">Diet Cream</a>
+              </li>
+              <li class="meni-item">
+                <a class="meni-link" href="ponuda.html">Ponuda</a>
+              </li>
+              <li class="meni-item">
+                <a class="meni-link" href="desavanja.html"> Dešavanja</a>
+              </li>
+              <li class="meni-item">
+                <a class="meni-link" href="kontakt.html"> Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div class="container">
+    <!--Ponuda-->
+    <section class="ponuda">
+      <div class="naslov">
+        <h2>Ponuda</h2>
+      </div>
 
-            
+      <div class="container">
+        <div class="div-za-dugme">
+          <button class="dugme-levo"></button>
+        </div>
+        <div class="vanila">
+          <div class="slikaukusa">
+            <img src="img/vanila.jpg" />
+          </div>
+          <header class="naslovukusa">
+            <h4>Vanila</h4>
+          </header>
+          <p class="opisukusa">
+            Naš sladoled od vanile se pravi od punomasnog kokosovog mleka i
+            prirodne vanile, dodaje se još i prstohvat ljubavi i dobijamo jedan
+            od najjednostavnijih, a opet najobožavanijih ukusa koje nudimo!
+          </p>
+        </div>
 
-            <article class="vanila" >
-                    <div class="slikaukusa" >
-                    <img src="vanila.jpg">
-                </div>
-                <header class="naslovukusa">
-                    <h4 >Vanila</h4>
-                </header>
-                <p class="opisukusa">Naš sladoled od vanile se pravi od punomasnog kokosovog mleka i prirodne vanile, dodaje se još i prstohvat ljubavi i dobijamo jedan od najjednostavnijih, a opet najobožavanijih ukusa koje nudimo! </p>
-            </article>
+        <div class="cokolada">
+          <div class="slikaukusa">
+            <img src="img/cokolada.jpg" />
+          </div>
+          <header class="naslovukusa">
+            <h4>Čokolada</h4>
+          </header>
+          <p class="opisukusa">
+            Ako pomešamo kakao, bademovo mleko, crnu čokoladu i ubacimo po koji
+            osmeh, nastaje najslađi sladoled od čokolade kome niko ne može
+            odeleti!
+          </p>
+        </div>
 
-            <article class="cokolada">
+        <div class="malina">
+          <div class="slikaukusa">
+            <img src="img/malina.jpg" />
+          </div>
+          <header class="naslovukusa">
+            <h4>Malina</h4>
+          </header>
+
+          <p class="opisukusa">
+            Za prave ljubitelje voća tu je sladoled od maline koji se pravi od
+            svežih malina i kokosovog mleka koji oduševljava!
+          </p>
+        </div>
+        <div class="div-za-dugme">
+          <button class="dugme-desno"></button>
+        </div>
+
+        <!--
+            <div class="pistaci">
                 <div class="slikaukusa" >
-                 <img src="cokolada.jpg">
-                </div>
-            <header class="naslovukusa" >
-                <h4 >Čokolada</h4>
-            </header>
-            <p class="opisukusa">Ako pomešamo kakao, bademovo mleko, crnu čokoladu i ubacimo po koji osmeh, nastaje najslađi sladoled od čokolade kome niko ne može odeleti!</p>
-            </article>
-
-            <article class="malina">
-                <div class="slikaukusa">
-                    <img src="malina.jpg">
-                </div>
-                <header class="naslovukusa">
-                    <h4 >Malina</h4>
-                </header>
-                <p class="opisukusa">Za prave ljubitelje voća tu je sladoled od maline koji se pravi od svežih malina i kokosovog mleka koji oduševljava!</p>
-
-            <article class="pistaci">
-                <div class="slikaukusa" >
-                    <img src="pistaci.jpg">
+                    <img src="img/pistaci.jpg" >
                 </div>
                 <header class="naslovukusa">
                     <h4 >Pistaći</h4>
                 </header>
                 <p class="opisukusa">Ako volite pistaće koliko i mi, onda je najbolji izbor za vas sladoled od pistaća koji se pravi od sojinog mleka i pistaća!</p>
-            </article>
+            </div>
 
-            <article class="lesnik">
+            <div class="lesnik">
                 <div class="slikaukusa">
-                    <img src="lesnik.jpg">
+                    <img src="img/lesnik.jpg" >
                 </div>
                 <header class="naslovukusa">
                     <h4>Lešnik</h4>
                 </header>
                 <p class="opisukusa">Svaki dan je lepši uz naš sladoled od lešnika koji se pravi od sojinog mleka i lešnika!</p>
-            </article>
+            </div>
 
-            <article class="kupina" >
+            <div class="kupina" >
             <div class="slikaukusa">                 
-               <img src="kupina.jpg">
+               <img src="img/kupina.jpg" >
                 </div>
                 <header class="naslovukusa">
                     <h4>Kupina</h4>
                 </header>
                 <p class="opisukusa">Sigurni smo da će svi obožavati sladoled koji se dobija od puno sreće, bademovog mleka i svežih kupina!</p>
-            </article>
-        
-
-    </div>
-    <div class="dugme">
-        <button id="prethodno"><i ></i><span >Prethodno</span></button>
-        <button id="sledece" ><span>Sledeće</span><i ></i></button>
-    </div>
+            </div> -->
+      </div>
     </section>
 
-
-  <!-- Footer -->
-  <footer class="footer">
-        <div class="container">
-          <div>
-              <ul>
-                <li>Kontakt telefon: 011/356-22-76</li>
-                <li>Mail: dietcream@gmail.com</li>
-                <li>Adresa: Knez Mihaila 15</li>
-              </ul>
-          </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <ul>
+            <li>Kontakt telefon: 011/356-22-76</li>
+            <li>Mail: dietcream@gmail.com</li>
+            <li>Adresa: Knez Mihaila 15</li>
+          </ul>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

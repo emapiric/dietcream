@@ -1,157 +1,206 @@
-
-  
- *{
-    margin: 0;
-    padding: 0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/*body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}*/ /*ovo je nesto s neta zanemari al nek bude tu ako zatreba*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 a {
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
+  color: black;
 }
 
+a:hover,
+a:active {
+  color: white; /*ne radi za active, a za hover je zamena za stari selektor #mainNav ul li*/
+}
 
+/* HEADER */
+#mainNav .link-pocetna {
+  font-family: "Kaushan Script";
+  font-size: 1.75em;
+  position: center;
+}
 
-  #mainNav .link-pocetna {
-    color: #fed136;
-    font-family: 'Kaushan Script' ;
-    font-size: 1.75em;
-    position:center;
-   
-  }
-  
-  
-  .navBar{
-      
-      position: fixed;
-        top:0;  
-        height: 80px;
-        right: 0;
-        left: 0;
-    }
+#mainNav {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  right: 0;
+  left: 0;
+}
 
-    #mainNav .container ul{
-        display: grid;
-        grid-template-columns: 1450px 150px 150px 150px;
-        list-style-type: none;
-        background-color: aquamarine;
-        padding-right:0;
-        font-size:x-large;
-    }
+#mainNav .container ul {
+  display: grid;
+  grid-template-columns: 850px 150px 150px 150px; /*ovde je bilo 1450, vidi responzivnost*/
+  list-style-type: none;
+  background-color: rgb(194, 153, 125);
+  padding-right: 0;
+  font-size: x-large;
+}
 
-    #mainNav .container ul li {
-       display:grid;
-        justify-content: center;
-        align-content: center; 
-    } 
+#mainNav .container ul li {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
 
-    #mainNav .container ul li :hover{
-        color: #FF1493;
-    } 
-
-    #mainNav .container ul li:first-child {
-        justify-self:left;
-        font-size: xx-large;
-        align-content: center;
-        padding-left: 30px;
-      
-    } 
-/*Footer radimo sada!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.footer{
-  height:70px;
-  background-color:aquamarine;
+#mainNav .container ul li:first-child {
+  justify-self: left;
+  font-size: xx-large;
+  align-content: center;
+  padding-left: 30px;
+}
+/* FOOTER */
+/*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
+.footer {
+  height: 70px;
+  background-color: rgb(194, 153, 125);
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: #FF1493;
+  color: black;
   font-weight: bold;
   text-align: center;
 }
 
 .footer ul {
-  display:grid;
+  display: grid;
   grid-template-columns: 300px 300px 300px;
   justify-content: center;
 }
-.footer ul li{
-  display:grid;
+.footer ul li {
+  display: grid;
   justify-content: center;
   list-style-type: none;
   padding-top: 20px;
- 
 }
 
+/* POCETNA */
 
-/* POCETNA */ 
-
-#pocetna .container{
- /* height: 1000px;*/
-background-image: url(pocetna.jpg);
-text-align: center;
-padding-top: 150px;
-padding-bottom: 150px;
-
+#pocetna {
+  background-image: url(../img/pocetna.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#pocetna .container {
+  /* height: 1000px;*/
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
-
-
-#pocetna .container .text .naslov{
-font-size:200px;
-font-weight: bold;
-
+#pocetna .container .text .naslov {
+  font-size: 200px;
+  font-weight: bold;
 }
-#pocetna .container .text .moto{
+#pocetna .container .text .moto {
   font-size: 50px;
 }
 
-/* PONUDAAAAAA*/
-
- .ponuda .naslov{
+/* PONUDA*/
+.ponuda .naslov,
+#desavanja h2 {
   font-size: x-large;
   color: black;
   font-weight: bold;
-  padding-bottom: 50px;
-  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-top: 80px;
   text-align: center;
-  
+}
+.ponuda .container {
+  display: grid;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  justify-items: center;
+}
+.ponuda .container .slikaukusa,
+.ponuda .container .slikaukusa img {
+  height: 300px;
+  width: 300px;
+}
+.ponuda p {
+  width: 300px;
+}
+.ponuda .container div {
+  display: grid;
+  text-justify: center;
+  text-align: center;
 }
 
- .ponuda .container .slikaukusa {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border-image-width: 120px;
-  height: 120px;
-  
-}
-.ponuda .container article{
-  justify-content: center;
-  align-content: center;
-}
- .ponuda .container .naslovukusa{
-  font-family: 'Times New Roman', Times, serif;
+.ponuda .container .naslovukusa {
+  font-family: "Times New Roman", Times, serif;
   font-size: x-large;
- }
-
-
- .ponuda button {
-color:rgba(206, 20, 66, 0.74);
-background-color: yellow;
-padding: 15px 32px;
-border: none;
-float:right;
+}
+/*dugmici levo desno*/
+.div-za-dugme {
+  display: grid;
+  align-items: center;
+}
+.dugme-levo {
+  background-image: url("../img/levo.png");
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border: none;
 }
 
+.dugme-desno {
+  background-image: url("../img/desno.png");
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border: none;
+}
 
+.dugme-levo:hover {
+  background-image: url("../img/levo-hover.png");
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border: none;
+}
 
+.dugme-desno:hover {
+  background-image: url("../img/desno-hover.png");
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border: none;
+}
 
+/*DESAVANJA*/
+/*za naslov je isto gde i ponuda*/
+#desavanja h3 {
+  font-size: large;
+  color: black;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
+.container-desavanja ul {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
 
+.container-desavanja ul li {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center; /*ne radi*/
+}
 
-
-
-
-
-  
+/*ne umem da je poravnam kako zelim pomocu aligna sve mi jebes a moracemo da nadjemo nacin*/
+.lista-desavanja img {
+  height: 50%;
+  width: 50%;
+}
