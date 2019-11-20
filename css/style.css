@@ -1,6 +1,6 @@
 
   
-  *{
+ *{
     margin: 0;
     padding: 0;
     
@@ -16,7 +16,9 @@ a {
     color: #fed136;
     font-family: 'Kaushan Script' ;
     font-size: 1.75em;
-    position:center;}
+    position:center;
+   
+  }
   
   
   .navBar{
@@ -40,9 +42,7 @@ a {
     #mainNav .container ul li {
        display:grid;
         justify-content: center;
-        align-content: center;
-        
-        
+        align-content: center; 
     } 
 
     #mainNav .container ul li :hover{
@@ -59,12 +59,13 @@ a {
 /*Footer radimo sada!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .footer{
   height:70px;
-  background-color: green;
+  background-color:aquamarine;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: #FF1493;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -85,10 +86,11 @@ a {
 /* POCETNA */ 
 
 #pocetna .container{
-  height: 1000px;
-background-image: url(slika1.jpg);
+ /* height: 1000px;*/
+background-image: url(pocetna.jpg);
 text-align: center;
-padding-top: 350px;
+padding-top: 150px;
+padding-bottom: 150px;
 
 }
 
@@ -96,11 +98,59 @@ padding-top: 350px;
 
 #pocetna .container .text .naslov{
 font-size:200px;
+font-weight: bold;
 
 }
 #pocetna .container .text .moto{
   font-size: 50px;
 }
+
+/* PONUDAAAAAA*/
+
+ .ponuda .naslov{
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  text-align: center;
+  
+}
+
+ .ponuda .container .slikaukusa {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-image-width: 120px;
+  height: 120px;
+  
+}
+.ponuda .container article{
+  justify-content: center;
+  align-content: center;
+}
+ .ponuda .container .naslovukusa{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+ }
+
+
+ .ponuda button {
+color:rgba(206, 20, 66, 0.74);
+background-color: yellow;
+padding: 15px 32px;
+border: none;
+float:right;
+}
+
+
+
+
+
+
+
+
 
 
 
