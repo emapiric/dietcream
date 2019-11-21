@@ -215,6 +215,12 @@ a:active {
   width: 50%;
 }
 
+.slika-desavanja img{
+  height: 280px;
+  width: 300px;
+  border-radius: 8px;
+}
+
 
 /*KONTAKT*/
 
