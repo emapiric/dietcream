@@ -33,6 +33,7 @@ a:active {
 }
 
 #mainNav {
+  z-index: 1;
   position: fixed;
   top: 0;
   height: 80px;
@@ -40,22 +41,23 @@ a:active {
   left: 0;
 }
 
-#mainNav .container ul {
+.meni-lista {
+  height: 80px;
   display: grid;
   grid-template-columns: 850px 150px 150px 150px; /*ovde je bilo 1450, vidi responzivnost*/
   list-style-type: none;
-  background-color: rgba(173, 162, 162, 0.4);
+  background-color: rgb(173, 162, 162);
   padding-right: 0;
   font-size: x-large;
 }
 
-#mainNav .container ul li {
+.meni-item {
   display: grid;
   justify-content: center;
   align-content: center;
 }
 
-#mainNav .container ul li:first-child {
+.meni-item:first-child {
   justify-self: left;
   font-size: xx-large;
   align-content: center;
@@ -65,10 +67,8 @@ a:active {
 /*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
 .footer {
   height: 70px;
-  background-color: rgba(173, 162, 162, 0.4);
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  background-color: rgb(173, 162, 162);
+  position: relative;
   width: 100%;
   color: black;
   font-weight: bold;
@@ -196,12 +196,12 @@ a:active {
   text-align: center;
 }
 
-.container-desavanja ul {
+.lista-desavanja {
   display: grid;
   grid-template-rows: auto auto auto;
 }
 
-.container-desavanja ul li {
+.desavanje {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
@@ -212,6 +212,10 @@ a:active {
 .lista-desavanja img {
   height: 50%;
   width: 50%;
+}
+
+.slika-desavanja {
+  text-align: center;
 }
 
 .slika-desavanja img {
