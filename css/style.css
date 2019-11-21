@@ -8,7 +8,9 @@
   flex-direction: column;
   min-height: 100vh;
 }*/ /*ovo je nesto s neta zanemari al nek bude tu ako zatreba*/
-
+body{
+  padding-top: 80px;
+}
 html {
   scroll-behavior: smooth;
 }
