@@ -85,14 +85,21 @@ a:active {
   padding-top: 20px;
 }
 
-/* POCETNA */
-
-#pocetna {
+/*POCETNA*/
+  #pocetna {
   background-image: url(../img/pocetna.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-blend-mode: lighten;
+  }
+
+  @media (min-width: 60rem) {
+    #pocetna{
+        height: 100vh;
+    }
 }
+
 #pocetna .container {
   /* height: 1000px;*/
   text-align: center;
@@ -100,13 +107,14 @@ a:active {
   padding-bottom: 150px;
 }
 
-#pocetna .container .text .naslov {
+#pocetna .naslov {
   font-size: 200px;
   font-weight: bold;
 }
-#pocetna .container .text .moto {
+#pocetna .moto {
   font-size: 50px;
 }
+
 
 /* PONUDA*/
 .ponuda .naslov,
