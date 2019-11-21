@@ -64,7 +64,7 @@ a:active {
 /* FOOTER */
 /*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
 .footer {
-  height: 70px;
+  height: 50px;
   background-color: rgb(194, 153, 125);
   position: fixed;
   left: 0;
@@ -312,4 +312,25 @@ select{
   justify-content: center;
   align-content: center;
 }
+
+
+
+
+
+@media  (max-width: 768px) {
+  
+  #mainNav .container ul{
+    display: grid;
+    grid-template-columns:auto auto auto auto; 
+    font-size: smaller;
+
+  }
+  #mainNav .container ul li:first-child{
+    font-size: smaller;
+  }
+   
+
+  }    
+}
+
 
