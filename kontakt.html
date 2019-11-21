@@ -1,106 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Diet Cream</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-        <header>
-                <!-- meni -->
-                <nav id = "mainNav" class="navBar">
-                    <div class = "container"> 
-                     <!--<a class = "link-pocetna" href = #pocetna >Diet Cream</a>-->
-                      <div class = "meni">
-                        <ul class = "meni-lista">
-                          <li>
-                            <a class = "link-pocetna" href = "index.html" >Diet Cream</a>
-                          </li>
-                          <li class = "meni-item" >
-                            <a class = "meni-link" href = "ponuda.html" >Ponuda</a>
-                          </li>
-                          <li  class = "meni-item">
-                            <a class = "meni-link" href = "desavanja.html"> Dešavanja</a>
-                          </li>
-                          <li  class = "meni-item">
-                            <a class = "meni-link" href="kontakt.html"> Kontakt</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                </header>
-
-    
-<!--kontakt-->
-<section id="proba">
-   <div class = "kontakt-container">
-            <div class="mapouter">
-                <div class="mapa">
-                    <iframe  width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Knez%20mihailova%2015&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-                    
-                </div>
-                <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;} </style>
-            </div>
-          
-
-
-          <div class="div-forma">
-          <form>
-            <ul class="form-style-1">
-                <li><label>Vaše ime: <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="Ime" /> <input type="text" name="field2" class="field-divided" placeholder="Prezime" /></li>
-                <li>
-                    <label>Email <span class="required">*</span></label>
-                    <input type="email" name="field3" class="field-long" />
-                </li>
-                <li>
-                    <label>Grad</label>
-                    <select name="field4" class="field-select">
-                    <option value="Beograd">Beograd</option>
-                    <option value="Kragujevac">Kragujevac</option>
-                    <option value="Nis">Niš</option>
-                    </select>
-                </li>
-                <li>
-                  <label for="pol">Pol</label>
-                  <input type="radio" name="pol" value="muski"> Muški
-                  <input type="radio" name="pol" value="zenski"> Ženski
-                </li>
-                <li class= "ukusi-checkbox">
-                  <label for="ukusi">Omiljeni ukusi</label>
-                  <input type="checkbox" name="cokolada" value="cokolada"> Čokolada 
-                  <input type="checkbox" name="malina" value="malina"> Malina 
-                   <input type="checkbox" name="kupina" value="kupina"> Kupina 
-                  <input type="checkbox" name="vanila" value="vanila"> Vanila  
-                   <input type="checkbox" name="lesnik" value="lesnik"> Lešnik 
-                  <input type="checkbox" name="pistaci" value="pistaci"> Pistaći 
-                </li>
-                <li>
-                    <label>Vaša poruka <span class="required">*</span></label>
-                    <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
-                </li>
-                <li>
-                    <input type="submit" value="Pošalji"/>
-                </li>
-            </ul>
-            </form>
-          </div>
-      </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- meni -->
+      <nav id="mainNav" class="navBar">
         <div class="container">
-          <div>
-              <ul>
-                <li>Kontakt telefon: 011/356-22-76</li>
-                <li>Mail: dietcream@gmail.com</li>
-                <li>Adresa: Knez Mihaila 15</li>
-              </ul>
+          <!--<a class = "link-pocetna" href = #pocetna >Diet Cream</a>-->
+          <div class="meni">
+            <ul class="meni-lista">
+              <li>
+                <a class="link-pocetna" href="index.html">Diet Cream</a>
+              </li>
+              <li class="meni-item">
+                <a class="meni-link" href="ponuda.html">Ponuda</a>
+              </li>
+              <li class="meni-item">
+                <a class="meni-link" href="desavanja.html"> Dešavanja</a>
+              </li>
+              <li class="meni-item">
+                <a class="meni-link" href="kontakt.html"> Kontakt</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-</body>
+      </nav>
+    </header>
+
+    <!--kontakt-->
+    <section id="proba">
+      <div class="kontakt-container">
+        <div class="mapouter">
+          <div class="mapa">
+            <iframe
+              width="600"
+              height="400"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Knez%20mihailova%2015&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 600px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 600px;
+            }
+          </style>
+        </div>
+
+        <div class="div-forma">
+          <form>
+            <ul class="form-style-1">
+              <li>
+                <label>Vaše ime: <span class="required">*</span></label
+                ><input
+                  type="text"
+                  name="field1"
+                  class="field-divided"
+                  placeholder="Ime"
+                />
+                <input
+                  type="text"
+                  name="field2"
+                  class="field-divided"
+                  placeholder="Prezime"
+                />
+              </li>
+              <li>
+                <label>Email <span class="required">*</span></label>
+                <input type="email" name="field3" class="field-long" />
+              </li>
+              <li>
+                <label>Grad</label>
+                <select name="field4" class="field-select">
+                  <option value="Beograd">Beograd</option>
+                  <option value="Kragujevac">Kragujevac</option>
+                  <option value="Nis">Niš</option>
+                </select>
+              </li>
+              <li>
+                <label for="pol">Pol</label>
+                <input type="radio" name="pol" value="muski" /> Muški
+                <input type="radio" name="pol" value="zenski" /> Ženski
+              </li>
+              <li class="ukusi-checkbox">
+                <label for="ukusi">Omiljeni ukusi</label>
+                <input type="checkbox" name="cokolada" value="cokolada" />
+                Čokolada
+                <input type="checkbox" name="malina" value="malina" /> Malina
+                <input type="checkbox" name="kupina" value="kupina" /> Kupina
+                <input type="checkbox" name="vanila" value="vanila" /> Vanila
+                <input type="checkbox" name="lesnik" value="lesnik" /> Lešnik
+                <input type="checkbox" name="pistaci" value="pistaci" /> Pistaći
+              </li>
+              <li>
+                <label>Vaša poruka <span class="required">*</span></label>
+                <textarea
+                  name="field5"
+                  id="field5"
+                  class="field-long field-textarea"
+                ></textarea>
+              </li>
+              <li>
+                <input type="submit" value="Pošalji" />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <ul>
+            <li>Kontakt telefon: 011/356-22-76</li>
+            <li>Mail: dietcream@gmail.com</li>
+            <li>Adresa: Knez Mihaila 15</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
