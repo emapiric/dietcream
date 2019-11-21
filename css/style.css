@@ -44,7 +44,7 @@ a:active {
   display: grid;
   grid-template-columns: 850px 150px 150px 150px; /*ovde je bilo 1450, vidi responzivnost*/
   list-style-type: none;
-  background-color: rgb(194, 153, 125);
+  background-color: rgba(173, 162, 162, 0.4);
   padding-right: 0;
   font-size: x-large;
 }
@@ -64,8 +64,13 @@ a:active {
 /* FOOTER */
 /*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
 .footer {
+<<<<<<< HEAD
   height: 50px;
   background-color: rgb(194, 153, 125);
+=======
+  height: 70px;
+  background-color: rgba(173, 162, 162, 0.4);
+>>>>>>> 99940db824fa7a21100bc09f60d3b3b9cc933151
   position: fixed;
   left: 0;
   bottom: 0;
@@ -213,6 +218,12 @@ a:active {
 .lista-desavanja img {
   height: 50%;
   width: 50%;
+}
+
+.slika-desavanja img{
+  height: 280px;
+  width: 300px;
+  border-radius: 8px;
 }
 
 
