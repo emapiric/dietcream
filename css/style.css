@@ -89,6 +89,7 @@ a:active {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   justify-content: center;
+
 }
 .item-lista-footer {
   display: grid;
@@ -103,6 +104,7 @@ a:active {
   font-size: small;
   justify-content: space-between;
 }
+
 
 /*Ne znam kako naslov i moto na pocetnoj da sredim da bude responzivan!*/
 
