@@ -66,7 +66,6 @@ a:active {
 /* FOOTER */
 /*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
 .footer {
-  height: 70px;
   background-color: rgb(173, 162, 162);
   position: relative;
   width: 100%;
@@ -75,16 +74,16 @@ a:active {
   text-align: center;
 }
 
-.footer ul {
+.lista-footer {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   justify-content: center;
 }
-.footer ul li {
+.item-lista-footer {
   display: grid;
   justify-content: center;
   list-style-type: none;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 /*POCETNA*/
