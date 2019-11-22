@@ -96,12 +96,11 @@ a:active {
   background-blend-mode: lighten;
 }
 
-@media (min-width: 60rem) {
+/*@media (min-width: 60rem) {
   #pocetna {
     height: 100vh;
   }
-}
-
+}*/
 #pocetna .container {
   /* height: 1000px;*/
   text-align: center;
@@ -326,9 +325,21 @@ select {
   #mainNav .container ul {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    font-size: smaller;
+    font-size: small;
   }
   #mainNav .container ul li:first-child {
     font-size: smaller;
   }
+
+  .footer .container ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: small;
+    justify-content: space-between;
+
+  }
+
+  /*Ne znam kako naslov i moto na pocetnoj da sredim da bude responzivan!*/
+  
+  
 }
