@@ -26,7 +26,7 @@ a:active {
 }
 
 /* HEADER */
-#mainNav .link-pocetna {
+.link-pocetna {
   font-family: "Kaushan Script";
   font-size: 1.75em;
   position: center;
@@ -63,6 +63,17 @@ a:active {
   align-content: center;
   padding-left: 30px;
 }
+
+@media (max-width: 768px) {
+  .meni-lista {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: small;
+  }
+  .meni-lista li:first-child {
+    font-size: smaller;
+  }
+}
 /* FOOTER */
 /*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
 .footer {
@@ -85,6 +96,15 @@ a:active {
   list-style-type: none;
   padding: 20px;
 }
+
+.lista-footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: small;
+  justify-content: space-between;
+}
+
+/*Ne znam kako naslov i moto na pocetnoj da sredim da bude responzivan!*/
 
 /*POCETNA*/
 #pocetna {
@@ -130,27 +150,28 @@ a:active {
   grid-template-columns: 5% 30% 30% 30% 5%;
   justify-items: center;
 }
-.ponuda .container .slikaukusa,
-.ponuda .container .slikaukusa img {
+.slikaukusa,
+.slikaukusa img {
   height: 300px;
   width: 300px;
 }
 .ponuda p {
   width: 300px;
 }
-.ponuda .container div {
+.ukus,
+.div-za-dugme {
   display: grid;
-  text-justify: center;
   text-align: center;
+  padding: 20px;
 }
 
-.ponuda .container .naslovukusa {
+.naslovukusa {
   font-family: "Times New Roman", Times, serif;
   font-size: x-large;
+  padding: 10px;
 }
 /*dugmici levo desno*/
 .div-za-dugme {
-  display: grid;
   align-items: center;
 }
 .dugme-levo {
@@ -203,17 +224,18 @@ a:active {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  justify-content: center; /*ne radi*/
 }
 
-/*ne umem da je poravnam kako zelim pomocu aligna sve mi jebes a moracemo da nadjemo nacin*/
 .lista-desavanja img {
   height: 50%;
   width: 50%;
 }
 
-.slika-desavanja {
+.slika-desavanja,
+.naslov-desavanja,
+.datum-desavanja {
   text-align: center;
+  padding: 10px;
 }
 
 .slika-desavanja img {
@@ -222,7 +244,11 @@ a:active {
   border-radius: 8px;
 }
 
-/*KONTAKT*/
+.tekst-desavanja {
+  text-align: justify;
+  padding: 50px;
+  margin: 20px;
+}
 
 /*KONTAKT*/
 
@@ -320,25 +346,12 @@ select {
   align-content: center;
 }
 
-@media (max-width: 768px) {
-  #mainNav .container ul {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    font-size: small;
+/*responzivnost stranice ponuda, stranice kontakt i desavanja
+tako da sve na uzem ekranu prelazi u 1 kolonu*/
+@media (max-width: 800px) {
+  .ponuda .container,
+  .kontakt-container,
+  .desavanje {
+    grid-template-columns: auto;
   }
-  #mainNav .container ul li:first-child {
-    font-size: smaller;
-  }
-
-  .footer .container ul{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    font-size: small;
-    justify-content: space-between;
-
-  }
-
-  /*Ne znam kako naslov i moto na pocetnoj da sredim da bude responzivan!*/
-  
-  
 }
