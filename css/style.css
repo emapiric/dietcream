@@ -103,6 +103,10 @@ a:active {
   grid-template-columns: auto auto auto;
   font-size: small;
   justify-content: space-between;
+  /*align-content: space-between;*/
+}
+.lista-footer li{
+  justify-items: center;
 }
 
 
