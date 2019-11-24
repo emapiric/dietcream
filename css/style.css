@@ -337,11 +337,6 @@ select {
   border: 1px solid #bebebe;
   padding: 7px;
   margin: 0px;
-  /*-webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;*/
-  outline: none;
 }
 .form-style-1 input[type="text"]:focus,
 .form-style-1 input[type="date"]:focus,
@@ -387,6 +382,16 @@ select {
 }
 .form-style-1 .required {
   color: red;
+}
+
+.email-valid {
+  outline: 2px solid;
+  outline-color: green;
+}
+
+.email-invalid {
+  outline: 2px solid;
+  outline-color: red;
 }
 
 .kontakt-container {
