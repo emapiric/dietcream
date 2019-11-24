@@ -111,7 +111,7 @@ a:active {
 
 /*POCETNA*/
 #pocetna {
-  background-image: url(../img/pozadina.jpg);
+  background-image: url(../img/sladoled1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,7 +435,7 @@ select {
 }
 
 #kontakt {
-  background-image: url(../img/pozadina2.jpg);
+  background-image: url(../img/sladoled.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
