@@ -173,11 +173,13 @@ a:active {
 #prva-tri-ukusa {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
   justify-items: center;
 }
 #druga-tri-ukusa {
   display: none;
   grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
   justify-items: center;
 }
 
