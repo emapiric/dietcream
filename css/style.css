@@ -41,7 +41,7 @@ a:active {
   display: grid;
   grid-template-columns: 850px 150px 150px 150px; /*ovde je bilo 1450, vidi responzivnost*/
   list-style-type: none;
-  background-color:rgb(59, 207, 212);
+  background-color: rgb(59, 207, 212);
   padding-right: 0;
   font-size: x-large;
 }
@@ -70,7 +70,6 @@ a:active {
   }
 }
 /* FOOTER */
-/*IDEJA: umesto kontakt telefon, mail i adresa staviti ikonice iz foldera img*/
 .footer {
   background-color: rgb(59, 207, 212);
   position: relative;
@@ -105,7 +104,7 @@ a:active {
 /*POCETNA*/
 #pocetna {
   background-image: url(../img/pls4.jpg);
- /*background-attachment: fixed;
+  /*background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;*/
@@ -250,7 +249,7 @@ a:active {
   background-image: url("../img/desno-hover.png");
   width: 64px;
   height: 64px;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
 }
 
@@ -312,9 +311,8 @@ a:active {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  
-  
-    display: inline-block;
+
+  display: inline-block;
 }
 
 #desavanja {
@@ -323,14 +321,13 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;*/
- 
 }
 
 .tekst-desavanja {
   font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-    font-size:25px; 
+  font-size: 25px;
 }
 
 /*KONTAKT*/
@@ -402,13 +399,15 @@ select {
   height: 100px;
 }
 .form-style-1 input[type="submit"],
-.form-style-1 input[type="button"] {
+.form-style-1 input[type="button"],
+.form-style-1 input[type="reset"] {
   background: #4b99ad;
   padding: 8px 15px 8px 15px;
   border: none;
   color: #fff;
 }
 .form-style-1 input[type="submit"]:hover,
+.form-style-1 input[type="reset"]:hover,
 .form-style-1 input[type="button"]:hover {
   background: #4691a4;
   box-shadow: none;
@@ -439,20 +438,19 @@ select {
 
 #kontakt {
   background-image: url(../img/pls5.jpg);
- /* background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: lighten;*/
 }
 
+#map {
+  margin: 20px;
+  width: 450px;
+  height: 450px;
+}
 .lista-footer {
   font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/*responzivnost stranice ponuda, stranice kontakt i desavanja
-tako da sve na uzem ekranu prelazi u 1 kolonu*/
 @media (max-width: 800px) {
   .kontakt-container,
   .desavanje,
@@ -471,5 +469,15 @@ tako da sve na uzem ekranu prelazi u 1 kolonu*/
   }
   .meni-lista {
     grid-template-columns: 1000px 150px 150px 150px;
+  }
+  .kontakt-container {
+    column-gap: 200px;
+  }
+  #map {
+    height: 600px;
+    width: 600px;
+  }
+  #forma {
+    margin-top: 60px;
   }
 }

@@ -41,7 +41,7 @@
       <div class="container kontakt-container">
         <div class="mapouter">
           <div class="mapa">
-            <div id="map" style="width: 300px; height: 300px;"></div>
+            <div id="map" ></div>
 
             <!---<iframe
               width="600"
@@ -53,7 +53,7 @@
               marginwidth="0"
             ></iframe>-->
           </div>
-          <style>
+          <!-- <style>
             .mapouter {
               position: relative;
               text-align: right;
@@ -66,7 +66,7 @@
               height: 500px;
               width: 600px;
             }
-          </style>
+          </style> -->
         </div>
 
         <div class="div-forma">
@@ -90,7 +90,7 @@
                 />
               </li>
               <li>
-                <label>Email <span class="required">*</span></label>
+                <label>Email: <span class="required">*</span></label>
                 <input
                   type="email"
                   name="email"
@@ -99,30 +99,37 @@
                 />
               </li>
               <li>
-                <label>Grad</label>
+                <label>Grad: </label>
                 <select name="field4" class="field-select">
                   <option value="Beograd">Beograd</option>
                   <option value="Kragujevac">Kragujevac</option>
                   <option value="Nis">Niš</option>
                 </select>
               </li>
-              <li>
-                <label for="pol">Pol</label>
-                <input type="radio" name="pol" value="muski" /> Muški
-                <input type="radio" name="pol" value="zenski" /> Ženski
+              <li id="pol">
+                <label for="pol">Pol: </label>
+                <input type="radio" name="pol" value="muski" />
+                Muški
+                <input type="radio" name="pol" value="zenski" />
+                Ženski
               </li>
               <li class="ukusi-checkbox">
-                <label for="ukusi">Omiljeni ukusi</label>
+                <label for="ukusi">Omiljeni ukusi: </label>
                 <input type="checkbox" name="cokolada" value="cokolada" />
                 Čokolada
-                <input type="checkbox" name="malina" value="malina" /> Malina
-                <input type="checkbox" name="kupina" value="kupina" /> Kupina
-                <input type="checkbox" name="vanila" value="vanila" /> Vanila
-                <input type="checkbox" name="lesnik" value="lesnik" /> Lešnik
-                <input type="checkbox" name="pistaci" value="pistaci" /> Pistaći
+                <input type="checkbox" name="malina" value="malina" />
+                Malina
+                <input type="checkbox" name="kupina" value="kupina" />
+                Kupina
+                <input type="checkbox" name="vanila" value="vanila" />
+                Vanila
+                <input type="checkbox" name="lesnik" value="lesnik" />
+                Lešnik
+                <input type="checkbox" name="pistaci" value="pistaci" />
+                Pistaći
               </li>
               <li>
-                <label>Vaša poruka <span class="required">*</span></label>
+                <label>Vaša poruka: <span class="required">*</span></label>
                 <textarea
                   name="poruka"
                   id="poruka"
@@ -132,7 +139,7 @@
               </li>
               <li>
                 <input type="submit" value="Pošalji" />
-                <input type="reset" value="clear all" />
+                <input type="reset" value="Obriši" />
               </li>
             </ul>
           </form>
