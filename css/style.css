@@ -26,11 +26,6 @@ a:active {
 }
 
 /* HEADER */
-.link-pocetna {
-  font-family: "Kaushan Script";
-  font-size: 1.75em;
-  position: center;
-}
 
 #mainNav {
   z-index: 1;
@@ -64,7 +59,7 @@ a:active {
   padding-left: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .meni-lista {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -107,8 +102,6 @@ a:active {
   justify-items: center;
 }
 
-/*Ne znam kako naslov i moto na pocetnoj da sredim da bude responzivan!*/
-
 /*POCETNA*/
 #pocetna {
   background-image: url(../img/pls4.jpg);
@@ -118,13 +111,7 @@ a:active {
   background-blend-mode: lighten;*/
 }
 
-/*@media (min-width: 60rem) {
-  #pocetna {
-    height: 100vh;
-  }
-}*/
 #pocetna .container {
-  /* height: 1000px;*/
   text-align: center;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -145,6 +132,7 @@ a:active {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.75em;
 }
 .meni-item {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
@@ -152,6 +140,16 @@ a:active {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@media (max-width: 1000px) {
+  #pocetna .naslov {
+    font-size: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  #pocetna .moto {
+    font-size: 25 px;
+  }
+}
 /* PONUDA*/
 .ponuda .naslov,
 #desavanja h2 {
@@ -464,11 +462,14 @@ tako da sve na uzem ekranu prelazi u 1 kolonu*/
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   #pocetna,
   #desavanja,
   #id-ponuda,
   #kontakt {
     min-height: 1000px;
+  }
+  .meni-lista {
+    grid-template-columns: 1000px 150px 150px 150px;
   }
 }
