@@ -170,14 +170,25 @@ a:active {
 }
 .ponuda .container {
   display: grid;
-  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-columns: 5% 90% 5%;
   justify-items: center;
 }
+#prva-tri-ukusa {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+#druga-tri-ukusa {
+  display: none;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+
 .slikaukusa,
 .slikaukusa img {
   height: 300px;
   width: 300px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 .ponuda p {
   width: 300px;
@@ -190,17 +201,19 @@ a:active {
 }
 
 .naslovukusa {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: x-large;
   padding: 10px;
 }
 
-.opisukusa{
-  font-family:Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-text-align: justify;
-  }
+.opisukusa {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: justify;
+}
 /*dugmici levo desno*/
 .div-za-dugme {
   align-items: center;
@@ -211,10 +224,9 @@ text-align: justify;
   height: 64px;
   border: none;
   background-color: Transparent;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden; 
- 
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .dugme-desno {
@@ -222,11 +234,10 @@ text-align: justify;
   width: 64px;
   height: 64px;
   background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden; 
-  
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .dugme-levo:hover {
@@ -251,7 +262,6 @@ text-align: justify;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
- 
 }
 
 /*DESAVANJA*/
@@ -300,11 +310,10 @@ text-align: justify;
   padding: 50px;
   margin: 20px;
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 #desavanja {
@@ -442,9 +451,10 @@ select {
 /*responzivnost stranice ponuda, stranice kontakt i desavanja
 tako da sve na uzem ekranu prelazi u 1 kolonu*/
 @media (max-width: 800px) {
-  .ponuda .container,
   .kontakt-container,
-  .desavanje {
+  .desavanje,
+  #prva-tri-ukusa,
+  #druga-tri-ukusa {
     grid-template-columns: auto;
   }
 }
