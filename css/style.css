@@ -458,3 +458,12 @@ tako da sve na uzem ekranu prelazi u 1 kolonu*/
     grid-template-columns: auto;
   }
 }
+
+@media (min-width: 1200px) {
+  #pocetna,
+  #desavanja,
+  #id-ponuda,
+  #kontakt {
+    min-height: 1000px;
+  }
+}
