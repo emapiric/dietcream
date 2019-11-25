@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-/*body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}*/ /*ovo je nesto s neta zanemari al nek bude tu ako zatreba*/
 body {
   padding-top: 80px;
 }
@@ -22,7 +17,7 @@ a {
 
 a:hover,
 a:active {
-  color: white; /*ne radi za active, a za hover je zamena za stari selektor #mainNav ul li*/
+  color: white;
 }
 
 /* HEADER */
@@ -39,7 +34,7 @@ a:active {
 .meni-lista {
   height: 80px;
   display: grid;
-  grid-template-columns: 850px 150px 150px 150px; /*ovde je bilo 1450, vidi responzivnost*/
+  grid-template-columns: 850px 150px 150px 150px;
   list-style-type: none;
   background-color: rgb(59, 207, 212);
   padding-right: 0;
@@ -263,18 +258,6 @@ a:active {
   background-blend-mode: lighten;
 }
 
-/*DESAVANJA*/
-/*za naslov je isto gde i ponuda*/
-/*#desavanja h2 {
-  font-size:xx-large;
-  color: black;
-  padding-bottom: 20px;
-  text-align: center;
-  padding-top: 35px;
-  font-family: Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',
-  Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-}*/
-
 .lista-desavanja {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -319,10 +302,6 @@ a:active {
 
 #desavanja {
   background-image: url(../img/pls.jpg);
-  /*background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: lighten;*/
 }
 
 .tekst-desavanja {
