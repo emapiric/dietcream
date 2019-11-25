@@ -59,7 +59,7 @@ a:active {
   padding-left: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .meni-lista {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -139,12 +139,12 @@ a:active {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   #pocetna .naslov {
     font-size: 100px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   #pocetna .moto {
     font-size: 25 px;
   }
@@ -453,12 +453,15 @@ select {
     "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .kontakt-container,
   .desavanje,
   #prva-tri-ukusa,
   #druga-tri-ukusa {
     grid-template-columns: auto;
+  }
+  .form-style-1 {
+    max-width: 360px;
   }
 }
 
